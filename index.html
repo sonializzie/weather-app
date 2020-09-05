@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/71fc1b7f26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="card-body">
+              <div class="today-weather-info">
+                <h2 class="date-dayname" id="day">Sunday</h2>
+                <span class="date-day" id="time">14:00</span>
+                <span class="date-day" id="month"> | 2nd August 2020</span>
+                <br />
+                <br />
+                <button class="current-location" id="location-btn">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <span class="location" id="city"></span>
+                <span class="country-location" id="country"></span>
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <i class="far fa-sun weather-status"></i>
+                <br />
+                <br />
+                <span>
+                  <h1 id="today-temp">
+                    29 <a href="#" class="units" id="#">°C</a> |
+                    <a href="#" class="units" id="#">°F</a>
+                  </h1>
+                </span>
+                <h2 class="weather-type" id="description">Sunny</h2>
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <form class="form-inline">
+                <div class="form-group mb-2">
+                  <label for="staticLocationl2" class="sr-only">Forecast</label>
+                  <input
+                    type="text"
+                    readonly
+                    class="form-control-plaintext"
+                    id="staticForecast2"
+                    value=" ☂ Weather Forecast"
+                  />
+                </div>
+              </form>
+              <form id="search-form">
+                <div class="row">
+                  <div class="form-group mx-sm-3 mb-2 col-8">
+                    <label for="inputCity2" class="sr-only">City</label>
+                    <input
+                      type="search"
+                      class="form-control"
+                      id="city-input"
+                      autofocus="on"
+                      autocomplete="off"
+                      placeholder="Type a city..."
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary mx-sm-3 mb-2 col-2 search-btn"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+              <div class="weather-status">
+                <ul class="weather-status-info">
+                  <li id="precipitation">Precipitation : 0%</li>
+                  <li id="humidity">Humidity : 34%</li>
+                  <li id="wind">Wind : 0km/h</li>
+                </ul>
+              </div>
+              <br />
+              <div class="week-container">
+                <div class="week-list">
+                  <div class="row">
+                    <div class="col-sm">
+                      <i class="fas fa-cloud-sun"></i>
+                      <br />
+                      <span class="day-name">Monday</span>
+                      <br />
+                      <span class="day-temp">18°C</span>
+                    </div>
+                    <div class="col-sm">
+                      <i class="fas fa-cloud"></i>
+                      <span class="day-name">Tuesday</span>
+                      <span class="day-temp">17°C</span>
+                    </div>
+                    <div class="col-sm">
+                      <i class="fas fa-cloud-showers-heavy"></i>
+                      <span class="day-name">Wednesday</span>
+                      <span class="day-temp">20°C</span>
+                    </div>
+                    <div class="col-sm">
+                      <i class="fas fa-cloud-sun"></i>
+                      <span class="day-name">Thursday</span>
+                      <span class="day-temp">21°C</span>
+                    </div>
+                    <div class="col-sm">
+                      <i class="fas fa-cloud-sun"></i>
+                      <br />
+                      <span class="day-name">Friday</span>
+                      <br />
+                      <span class="day-temp">21°C</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <p class="card-text">
+                <small class="text-muted" id="last-updated">
+                  Last updated : 3 mins ago
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-credits">Created by : 👩🏾‍💻 | Sonia Ndonga</footer>
+    <script type="text/javascript" src="src/app.js" charset="utf-8"></script>
+  </body>
+</html>

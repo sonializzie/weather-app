@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 100px;
+}
+
+h1 {
+  color: #10375c;
+  font-size: 60px;
+}
+
+/*Weather status information e.g Wind, Percipitation etc.*/
+ul {
+  line-height: 40px;
+}
+
+.container {
+  display: block;
+  height: auto;
+}
+
+.mb-3 {
+  display: block;
+  margin: 0 auto;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  border: none;
+}
+
+.today-weather-info {
+  display: block;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding: 20px;
+}
+
+.line-mark {
+  color: #10375c;
+}
+
+.date-dayname {
+  font-size: 38px;
+}
+
+.date-day {
+  font-size: 20px;
+}
+
+.location {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.country-location {
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+.location-btn {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.current-location {
+  padding: 10px 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.fa-map-marker-alt {
+  font-size: 30px;
+  /* cursor: pointer; */
+}
+
+.fa-sun {
+  font-size: 80px;
+  color: #10375c;
+}
+
+.units {
+  color: #10375c;
+}
+
+.col-md-4 {
+  background-image: url(../images/clouds.jpeg);
+  height: 624px;
+  color: #fff;
+  border-radius: 4px;
+  background-position: center;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  padding: 30px;
+}
+
+.weather-type {
+  font-size: 30px;
+  color: #10375c;
+  text-transform: capitalize;
+}
+
+.col-md-8 {
+  background-color: #086972;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+.form-control-plaintext {
+  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  padding: 20px;
+}
+
+.form-control {
+  margin-left: 20px;
+}
+
+.search-btn {
+  background-color: #5f9ea0;
+  text-align: center;
+  border: none;
+}
+
+:hover.search-btn {
+  background-color: #10375c;
+}
+
+.weather-status {
+  padding: 20px;
+}
+
+.weather-status-info {
+  margin: 0 20px 10px;
+  padding: 0;
+  font-size: 20px;
+  list-style-type: none;
+  display: block;
+}
+
+.week-container {
+  background-color: #5f9ea0;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+  height: 200px;
+}
+
+.week-list {
+  list-style: none;
+  font-size: 22px;
+}
+
+.col-sm {
+  margin: 0 auto;
+  display: block;
+}
+
+.fa-cloud {
+  font-size: 60px;
+}
+
+.fa-cloud-showers-heavy {
+  font-size: 60px;
+}
+
+.fa-cloud-sun {
+  font-size: 60px;
+}
+
+.text-muted {
+  color: #fff !important;
+}
+
+.footer-credits {
+  display: block;
+  font-size: 18px;
+  margin: 0 65px;
+  text-align: left;
+}
