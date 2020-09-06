@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.clear {
-  clear: both;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   padding: 100px;
@@ -185,12 +181,5 @@ ul {
   display: block;
   font-size: 18px;
   margin: 0 65px;
-}
-
-.footer-link {
-  color: #086972;
-}
-
-.footer-link:hover {
-  text-decoration: underline !important;
+  text-align: left;
 }
