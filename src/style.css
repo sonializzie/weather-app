@@ -38,7 +38,7 @@ ul {
   display: block;
   margin: 0 auto;
   padding-top: 60px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .line-mark {
@@ -80,6 +80,10 @@ ul {
   /* cursor: pointer; */
 }
 
+:hover.fa-map-marker-alt {
+  color: #10375c;
+}
+
 .fa-sun {
   font-size: 80px;
   color: #10375c;
@@ -89,6 +93,18 @@ ul {
   color: #10375c;
 }
 
+:hover.units {
+  text-decoration: none;
+}
+
+.temperature-units {
+  color: #10375c;
+  margin: -70px;
+  margin-left: 10px;
+  padding-left: 70px;
+  float: left;
+}
+
 .col-md-4 {
   background-image: url(../images/clouds.jpeg);
   height: 624px;
@@ -96,13 +112,14 @@ ul {
   border-radius: 4px;
   background-position: center;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-  padding: 30px;
+  padding: 20px;
 }
 
 .weather-type {
   font-size: 30px;
   color: #10375c;
   text-transform: capitalize;
+  margin-top: 10px;
 }
 
 .col-md-8 {
@@ -189,6 +206,7 @@ ul {
 
 .footer-link {
   color: #086972;
+  font-size: 18px;
 }
 
 .footer-link:hover {

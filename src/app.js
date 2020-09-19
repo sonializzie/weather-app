@@ -96,7 +96,7 @@ function showTemperature(response) {
 
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#today-temp");
-  temperatureElement.innerHTML = `${temperature}°C`;
+  temperatureElement.innerHTML = `${temperature}`;
 
   let skyDescription = response.data.weather[0].description;
   let descriptionElement = document.querySelector("#description");
