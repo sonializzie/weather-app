@@ -94,6 +94,14 @@ function showTemperature(response) {
   let countryElement = document.querySelector("#country");
   countryElement.innerHTML = `${country}`;
 
+  let icon = response.data.weather.icon;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#today-temp");
   temperatureElement.innerHTML = `${temperature}`;
