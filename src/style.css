@@ -191,7 +191,6 @@ ul {
 .hour-forecast {
   table-layout: auto;
   white-space: nowrap;
-  margin-left: 20px;
 }
 
 .forecast-img {
