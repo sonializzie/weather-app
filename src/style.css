@@ -84,11 +84,6 @@ ul {
   color: #10375c;
 }
 
-.fa-sun {
-  font-size: 80px;
-  color: #10375c;
-}
-
 .units {
   clear: both;
 }
@@ -180,6 +175,27 @@ ul {
   margin: 0 auto;
   padding: 40px;
   height: 200px;
+}
+
+.row {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.col-2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hour-forecast {
+  table-layout: auto;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.forecast-img {
+  width: 100%;
 }
 
 .week-list {
