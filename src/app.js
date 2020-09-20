@@ -124,9 +124,9 @@ function showTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = `${skyDescription}`;
 
-  let precipitation = Math.round(response.data.clouds.all);
-  let precipitationElement = document.querySelector("#precipitation");
-  precipitationElement.innerHTML = `Clouds : ${precipitation} %`;
+  let clouds = Math.round(response.data.clouds.all);
+  let cloudsElement = document.querySelector("#clouds");
+  cloudsElement.innerHTML = `Clouds : ${clouds} %`;
 
   let humidity = Math.round(response.data.main.humidity);
   let humidityElement = document.querySelector("#humidity");
@@ -146,7 +146,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 5; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
 
