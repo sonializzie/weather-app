@@ -56,16 +56,24 @@ currentDay.innerHTML = day;
 //   cityElement.innerHTML = cityInput.value;
 // }
 
-function convertToFahrenheit(event) {
+function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#weather-temperature");
-  temperatureElement.innerHTML = 84;
+  let temperatureElement = document.querySelector("#today-temp");
+  //remove the active class to the celsius link
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function convertToCelsius(event) {
+let celsiusTemperature = null;
+
+function displayCelsiusTemperature(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#weather-temperature");
-  temperatureElement.innerHTML = 29;
+  let temperatureElement = document.querySelector("#today-temp");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let timeElement = document.querySelector("#time");
@@ -79,11 +87,11 @@ dateElement.innerHTML = formatDate(currentDate);
 // let searchForm = document.querySelector("#search-form");
 // searchForm, addEventListener("submit", search);
 
-// let fahrenheitLink = document.querySelector("#fahrenheit-link");
-// fahrenheitLink.addEventListener("click", convertToFahrenheit);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-// let celsiusLink = document.querySelector("#celsius-link");
-// celsiusLink.addEventListener("click", convertToCelsius);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 function showTemperature(response) {
   let city = response.data.name;
@@ -102,7 +110,9 @@ function showTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  let temperature = Math.round(response.data.main.temp);
+  celsiusTemperature = response.data.main.temp;
+
+  let temperature = Math.round(celsiusTemperature);
   let temperatureElement = document.querySelector("#today-temp");
   temperatureElement.innerHTML = `${temperature}`;
 

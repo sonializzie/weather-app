@@ -90,18 +90,28 @@ ul {
 }
 
 .units {
-  color: #10375c;
+  clear: both;
 }
 
 :hover.units {
   text-decoration: none;
+  color: #10375c;
+}
+
+.active {
+  cursor: default;
+  color: #10375c;
+}
+
+:hover.active {
+  cursor: default;
 }
 
 .temperature-units {
   color: #10375c;
   margin: -72px;
   margin-left: 10px;
-  padding-left: 60px;
+  padding-left: 65px;
   float: left;
 }
 
