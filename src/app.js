@@ -146,13 +146,13 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 5; index++) {
+  for (let index = 0; index < 4; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
 
     <div class="row">
         <h4>${formatHours(forecast.dt * 1000)}</h4>
-        <div class="row col-2 container">
+        <div class="row col-2 container weather-hr">
              <img class="forecast-img" src="http://openweathermap.org/img/wn/${
                forecast.weather[0].icon
              }@2x.png" />
